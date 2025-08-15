@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SueldoSemanal19796703.MainPage">
+
+    <ScrollView HorizontalOptions="Center">
+        <VerticalStackLayout
+            Padding="30,0"
+            HorizontalOptions="Start" Spacing="10">
+
+            <Label Text="Calculo de sueldo semanal" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"/>
+            <Label Text="Ingrese la cantidad de horas que trabajo"/>
+            <Entry Placeholder="Horas" x:Name="Horas"/>
+            <Label Text="Ingrese su pago por hora" />
+            <Entry Placeholder="Pago" x:Name="Pago"/>
+            <Button Text="Calcular Sueldo" Clicked="Button_Clicked" HorizontalOptions="Center" Margin="20"/>
+            <Label Text="Su sueldo es:" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+            <Label Text="$????" x:Name="PagoSemanal" FontAttributes="Bold" FontSize="25" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
